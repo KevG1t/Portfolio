@@ -85,10 +85,8 @@ PROJECTS.forEach(project => {
     link.textContent = 'Demo'
     link.href = project.url
     link.target = '_blank'
-    const linkContainer = document.createElement('div')
-    linkContainer.classList.add('demo', 'btn')
-    linkContainer.appendChild(link)
-    cardBody.appendChild(linkContainer)
+    link.classList.add('demo', 'btn')
+    cardBody.appendChild(link)
     card.appendChild(cardBody)
     projectsContent.appendChild(card)
 })

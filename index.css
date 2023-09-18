@@ -147,6 +147,9 @@ main{
     border-radius: 8px;
     border: 1px solid var(--dark-txt-color);
 }
+.textos .btn{
+    display: block;
+}
 
 
 .img-container{
