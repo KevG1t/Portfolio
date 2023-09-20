@@ -39,7 +39,7 @@ body {
     width: 100%;
     min-height: 100vh;
     /* background: var(--bg-color); */
-    background: url('./assets/images/bg.jpg');
+    background: url('./assets/images/bg.webp');
     background-position: center;
     background-size: cover;
 }
@@ -156,7 +156,7 @@ main{
     width: 200px;
     height: 200px;
     border-radius: 100%;
-    background: url('./assets/images/perfil3.jpeg');
+    background: url('./assets/images/perfil3.webp');
     background-size: cover;
     background-position-x:center;
     background-position-y: center;
@@ -342,6 +342,7 @@ main{
         right: -100%;
         background:var(--bg-transparent);
         backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
         height: calc(100vh - 80px);
         width: 50%;
         flex-direction: column;

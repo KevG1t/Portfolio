@@ -5,13 +5,13 @@ const TOOLS = {
     HTML: './assets/languages/html5.svg',
     CSS: './assets/languages/css3.svg',
     JAVASCRIPT: './assets/languages/javascript.svg',
-    TYPESCRIPT: './assets/languages/typescript.png',
+    TYPESCRIPT: './assets/languages/typescript.webp',
     REACT: './assets/languages/react.svg',
     VITE: './assets/languages/Vitejs-logo.svg',
     NODE: './assets/languages/node-js.svg',
     EXPRESS: './assets/languages/express.svg',
     REDUX: './assets/languages/redux.svg',
-    ZUSTAND: './assets/languages/zustand.png',
+    ZUSTAND: './assets/languages/zustand.webp',
     MYSQL: './assets/languages/mysql.svg',
     POSTGRESQL: './assets/languages/postgresql.svg',
     GIT: './assets/languages/git.svg',
@@ -21,32 +21,32 @@ const TOOLS = {
 
 const PROJECTS = [
     {
-        img_project: './assets/projects/ttt_online.jpeg',
+        img_project: './assets/projects/ttt_online.webp',
         url: 'https://tic-tac-toe-online-nine.vercel.app/',
         tools:['HTML','CSS','JAVASCRIPT','REACT','NODE','EXPRESS']
     },
     {
-        img_project: './assets/projects/quizz.jpeg',
+        img_project: './assets/projects/quizz.webp',
         url: 'https://kevg1t.github.io/JavaScriptQuizz/',
         tools:['HTML','CSS','JAVASCRIPT','REACT','ZUSTAND']
     },
     {
-        img_project: './assets/projects/CRUDjpeg.jpeg',
+        img_project: './assets/projects/CRUD.webp',
         url: 'https://kevg1t.github.io/CRUD-Redux-Tremor-TypeScript/',
         tools:['JAVASCRIPT','REACT','TYPESCRIPT','REDUX']
     },
     {
-        img_project: './assets/projects/movies.jpeg',
+        img_project: './assets/projects/movies.webp',
         url: 'https://kevg1t.github.io/Movies_Search/',
         tools:['HTML','CSS','JAVASCRIPT','REACT']
     },
     {
-        img_project: './assets/projects/card.jpeg',
+        img_project: './assets/projects/card.webp',
         url: 'https://kevg1t.github.io/Shopping-cart/',
         tools:['HTML','CSS','JAVASCRIPT','REACT']
     },
     {
-        img_project: './assets/projects/ttt.jpeg',
+        img_project: './assets/projects/ttt.webp',
         url: 'https://kevg1t.github.io/tic-tac-toe/',
         tools:['HTML','CSS','JAVASCRIPT','REACT']
     }
