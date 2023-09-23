@@ -19,6 +19,7 @@
     --text-color: #D0ADF0;
     --secundary-txt-color: #b6a6c6;
     --dark-txt-color: #a79cb3;
+    --txt-color-inputs: #684985;
 }
 
 html{
@@ -145,11 +146,9 @@ main{
     text-align: center;
     text-shadow: 0 0 50px var(--vilet);
     border-radius: 8px;
-    border: 1px solid var(--dark-txt-color);
+    border: 1px solid var(--text-color);
 }
-.textos .btn{
-    display: block;
-}
+
 
 
 .img-container{
@@ -175,11 +174,11 @@ main{
 }
 
 .section.about{
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   flex-direction: column;
-   gap: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
 }
 
 .section.projects{
@@ -229,11 +228,11 @@ main{
 }
 
 .projects-content {
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: center;
-   align-items: center;
-   gap: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
 }
 
 .card{
@@ -294,14 +293,71 @@ main{
     width: 200px;
     height: 50px;
     border-radius: 8px;
-    border: 1px solid var(--dark-txt-color);
+    border: 1px solid var(--text-color);
+}
+
+/* footer */
+
+.fields{
+    border: none;
+    color: var(--dark-txt-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+.fields input{
+    height: 35px;
+    width: 100%;
+}
+
+.fields textarea {
+    width: 100%;
+    resize: none;
+}
+
+.fields input, .fields textarea{
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    color: var(--txt-color-inputs);
+    font-weight: bold;
+    font-size: 1em;
+    margin-top: 15px;
+    padding: 5px 15px;
+    box-shadow: 0 0 10px var(--cyan);
+}
+
+.fields input::placeholder, .fields textarea::placeholder {
+    opacity: 0.5; /* Cambia esto al valor deseado (0.0 - 1.0) */
+}
+
+.fields input:focus, .fields textarea:focus {
+    outline: 2px solid var(--text-color);
+}
+
+.fields .btn{
+    width: 150px;
+    height: 45px;
+    border: 1px solid var(--text-color);
+    border-radius: 8px;
+    background: transparent;
+    color: var(--text-color);
+    font-weight: bold;
+    font-size: 1em;
+    box-shadow: 0 0 10px var(--cyan);
 }
 
 .list-link:hover{
+    color: var(--cyan);
     text-decoration: underline;
 }
 
 .list-item.icons a:hover{
+    color: var(--cyan);
     scale: 1.1;
 }
 

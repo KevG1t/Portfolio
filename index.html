@@ -177,9 +177,18 @@
     <footer id="contact">
       <section class="section contact">
         <h2 class="section-page">Contact</h2>
-        <span>comming soon...</span>
+        <form id="f-form" class="f-form">
+          <fieldset class="fields">
+            <label for="name">Name <input placeholder="Enter your name" required id="name" name="name" type="text"></label>
+            <label for="email">Email <input placeholder="example@gmail.com" required id="email" name="email" type="email"></label>
+            <label for="body">Message <textarea placeholder="Message..." id="body" name="body" cols="80" rows="10" required></textarea></label>
+            <button type="submit" class="btn"> Send</button>
+          </fieldset>
+        </form>
       </section>
     </footer>
+    <div class="toast"></div>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="./index.js"></script>
   </body>
 </html>

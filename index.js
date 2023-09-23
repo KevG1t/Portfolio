@@ -92,4 +92,29 @@ PROJECTS.forEach(project => {
 })
 
 
+const sendEmail = (event) => {
+  event.preventDefault();
+  const form = event.target
+  const data = new FormData(form)
+ 
+  Email.send({
+    SecureToken : "a7cf8505-b43b-4047-8dd4-b2e1b4141edf",
+    To : 'kevinantonioc13@gmail.com',
+    From : 'kevincorrales2016@gmail.com',
+    Subject : 'Contact me',
+    Body : `
+    Name: ${data.get('name')}
+    <br> Email: ${data.get('email')}
+    <br>Message: ${data.get('body')}
+    `,
+}).then(
+  message => alert('Message sed succesfully')
+).catch(err => alert('Error: ' + err.message))
+
+  form.reset();
+}
+
+const form = document.getElementById('f-form')
+form.addEventListener('submit', sendEmail)
+
 
