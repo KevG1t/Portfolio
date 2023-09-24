@@ -107,9 +107,24 @@ const sendEmail = (event) => {
     <br> Email: ${data.get('email')}
     <br>Message: ${data.get('body')}
     `,
-}).then(
-  message => alert('Message sed succesfully')
-).catch(err => alert('Error: ' + err.message))
+}).then( 
+  message => {
+    const toast = document.querySelector('.toast')
+    toast.textContent = 'Message sed succesfully'
+    toast.classList.remove('error')
+    toast.classList.add('show')
+    setTimeout(() => {
+        toast.classList.remove('show')
+      }, 3000)
+}
+).catch(err => {
+    const toast = document.querySelector('.toast')
+    toast.textContent = err
+    toast.classList.add('error', 'show')
+    setTimeout(() => {
+        toast.classList.remove('show')
+      }, 3000)
+})
 
   form.reset();
 }
