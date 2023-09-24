@@ -390,7 +390,7 @@ footer{
     color: var(--text-color);
     position: fixed;
     right: 20px;
-    top: -100px;
+    top: -500px;
     z-index: 100;
     min-width: 200px;
     width: auto;
@@ -416,7 +416,7 @@ footer{
 }
 
 .toast.show{
-   top: 100px
+   top: 200px
 }
 
 
