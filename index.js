@@ -15,11 +15,17 @@ const TOOLS = {
     MYSQL: './assets/languages/mysql.svg',
     POSTGRESQL: './assets/languages/postgresql.svg',
     GIT: './assets/languages/git.svg',
-    GITHUB: './assets/languages/github.svg' 
+    GITHUB: './assets/languages/github.svg',
+    TAILWIND: '/assets/languages/tailwind.webp' 
 }
 
 
 const PROJECTS = [
+    {
+        img_project: './assets/projects/ecommerce.webp',
+        url: 'https://e-commerce-react-chi-ruby.vercel.app/',
+        tools:['TYPESCRIPT','REACT','TAILWIND']
+    },
     {
         img_project: './assets/projects/ttt_online.webp',
         url: 'https://tic-tac-toe-online-nine.vercel.app/',
