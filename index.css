@@ -10,7 +10,7 @@
 :root{
     --max-width: 80%;
 
-    --bg-color: #0B1120;
+    /* --bg-color: #0B1120;
     --vilet: #BD34FE;
     --cyan: #49C7FF;
 
@@ -20,7 +20,26 @@
     --secundary-txt-color: #b6a6c6;
     --dark-txt-color: #a79cb3;
     --txt-color-inputs: #684985;
-    --bg-inputs: #cabad9;
+    --bg-inputs: #cabad9; */
+
+    
+    --color-50: #f0f7fe;
+    --bg-inputs: #deecfb;
+    --text-color: #c4e0f9;
+    --color-300: #9cccf4;
+    --title-color: #6dafed;
+    --color-500: #4b90e6;
+    --color-600: #3674da;
+    --color-700: #2d60c8;
+    --color-800: #2a4fa3;
+    --bg-color-ligth-900: #274481;
+    --bg-color: #0f172a;
+
+    --bg-gradient: linear-gradient(to right, var(--color-300),
+    var(--color-500), var(--bg-color-ligth-900));
+
+    --border: 2px solid rgba(128, 128, 128, 0.176);
+
 }
 
 html{
@@ -40,21 +59,21 @@ body {
     font-size: 2rem;
     width: 100%;
     min-height: 100vh;
-    /* background: var(--bg-color); */
-    background: url('./assets/images/bg.webp');
+    background: var(--bg-color);
+    /* background: url('./assets/images/bg.webp'); */
     background-position: center;
     background-size: cover;
 }
 
 header{
-    color: var(--text-color);
+    color: var(--color-700);
+    background: var(--bg-color);
     width: 100%;
     height: 80px;
     padding: 0 20px;
     position: sticky;
     top: 0;
-    box-shadow: 0 0 10px #000;
-    background: var(--bg-transparent);
+    box-shadow: 0 0 1px var(--bg-color-ligth-900);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -64,6 +83,7 @@ header{
 #check-one{
     display: none;
 }
+
 .logo {
     width: 150px;
     height: 80px;
@@ -88,6 +108,12 @@ header .menu {
     display: none;
 }
 
+.list-link,
+.list-item.icons a svg{
+    color: var(--color-500);
+    font-weight: bold;
+}
+
 main, footer{
     margin: 0 auto;
     max-width: var(--max-width);
@@ -95,11 +121,11 @@ main, footer{
 }
 
 header .list{
-    color: var(--text-color);
     display: flex;
     gap: 2em;
     justify-content: space-evenly;
 }
+
 
 .list-item.icons,.list-item.icons a {
     display: flex;
@@ -132,22 +158,21 @@ main{
 }
 
 .proffesion{
-    color: var(--secundary-txt-color);
+    color: var(--color-800);
     align-self: flex-end;
 }
 
 .textos .cv {
+    color: var(--color-500);
     margin: 20px 0;
     align-self: flex-end;
-    color: var(--vilet);
     width: 250px;
     height: 45px;
     font-size: 3rem;
     font-weight: bold;
     text-align: center;
-    text-shadow: 0 0 50px var(--vilet);
     border-radius: 8px;
-    border: 1px solid var(--text-color);
+    border: 1px solid var(--color-300);
 }
 
 
@@ -155,12 +180,10 @@ main{
 .img-container{
     width: 200px;
     height: 200px;
-    border-radius: 100%;
+    border-radius: 15%;
     background: url('./assets/images/perfil3.webp');
     background-size: cover;
-    background-position-x:center;
-    background-position-y: center;
-    border: 2px var(--dark-txt-color) solid;
+    background-position: center;
     box-shadow: 2px 2px 100px rgba(0, 255, 255, 0.153); 
 }
 
@@ -190,16 +213,16 @@ main{
 }
 
 .section.about p{
-    color: var(--dark-txt-color);
+    color: var(--title-color);
     font-weight: bold;
     font-size: 2.5rem;
     max-width: 70%;
 }
 
 .section-page{
-    color: var(--secundary-txt-color);
+    color: var(--color-700);
     font-size: clamp(4rem, 5vw, 8rem);
-    text-shadow: 0 0 150px #49C7FF;
+    /* text-shadow: 0 0 150px #49C7FF; */
 }
 
 .language-logo{
@@ -244,7 +267,7 @@ main{
     width: 400px;
     background: rgba(255, 255, 255, 0.064);
     border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.5);
+    border: var(--border);
 }
 
 .card-img{
@@ -265,7 +288,7 @@ main{
     display: flex;
     flex-direction: column;
     gap: 20px;
-    border: 1px solid rgba(255,255,255,0.5);
+    border-top: var(--border);
 }
 
 .tools{
@@ -289,6 +312,7 @@ main{
 }
 
 .demo{
+    color: var(--color-500);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -298,7 +322,7 @@ main{
     width: 70%;
     height: 50px;
     border-radius: 8px;
-    border: 1px solid var(--text-color);
+    border: var(--border);
 }
 
 /* footer */
@@ -307,8 +331,9 @@ footer{
 }
 .fields{
     border: none;
-    color: var(--dark-txt-color);
+    color: var(--bg-color-ligth-900);
     display: flex;
+    font-weight: bold;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -335,12 +360,11 @@ footer{
     border: none;
     outline: none;
     border-radius: 10px;
-    color: var(--txt-color-inputs);
+    color: var(--title-color);
     font-weight: bold;
     font-size: 1em;
     margin-top: 15px;
     padding: 5px 15px;
-    box-shadow: 0 0 5px var(--cyan);
     text-overflow: ellipsis;
 }
 
@@ -349,32 +373,36 @@ footer{
 }
 
 .fields input:focus, .fields textarea:focus {
-    outline: 2px solid var(--text-color);
+    outline: 2px solid var(--title-color);
 }
 
 .fields .btn{
     width: 150px;
     height: 45px;
-    border: 1px solid var(--text-color);
+    border: 1px solid var(--color-300);
     border-radius: 8px;
     background: transparent;
-    color: var(--text-color);
+    color: var(--color-500);
     font-weight: bold;
     font-size: 3rem;
 }
 
 .list-link:hover{
-    color: var(--cyan);
+    color: var(--bg-color-ligth-900);
     text-decoration: underline;
+    transition: all 0.2s ease-in-out;
 }
 
 .list-item.icons a:hover{
-    color: var(--cyan);
+    color: var(--bg-color-ligth-900);
     scale: 1.1;
+    transition: all 0.2s ease-in-out;
 }
 
 .btn:hover{
-    text-shadow: 0 0 20px rgb(20, 189, 219);
+    color: var(--bg-color);
+   background: var(--bg-color-ligth-900);
+   transition: all .2s ease-in-out;
 }
 
 
@@ -454,9 +482,9 @@ footer{
         position: fixed;
         top: 80px;
         right: -100%;
-        background:var(--bg-transparent);
-        backdrop-filter: blur(5px);
-        -webkit-backdrop-filter: blur(5px);
+        background:var(--bg-color);
+        /* backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px); */
         height: calc(100vh - 80px);
         width: 50%;
         flex-direction: column;
