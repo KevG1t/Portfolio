@@ -34,6 +34,7 @@
     --color-800: #2a4fa3;
     --bg-color-ligth-900: #274481;
     --bg-color: #0f172a;
+    --bg-secondary-color: rgba(47, 48, 72, 0.203);
 
     --bg-gradient: linear-gradient(to right, var(--color-300),
     var(--color-500), var(--bg-color-ligth-900));
@@ -121,11 +122,21 @@ main, footer{
 }
 
 header .list{
+    height: 50px;
     display: flex;
     gap: 2em;
     justify-content: space-evenly;
+    place-items: center;
+    padding: 10px 5px 10px 15px;
+    border-radius: 50px;
+    background: var(--bg-secondary-color);
 }
 
+.list-item.icons{
+    background: var(--bg-color);
+    padding: 10px 20px;
+    border-radius: 55px;
+}
 
 .list-item.icons,.list-item.icons a {
     display: flex;
@@ -331,7 +342,7 @@ footer{
 }
 .fields{
     border: none;
-    color: var(--bg-color-ligth-900);
+    color: var(--color-800);
     display: flex;
     font-weight: bold;
     flex-direction: column;
@@ -407,6 +418,7 @@ footer{
 
 
 .section {
+    background: var(--bg-secondary-color);
     padding: 40px;
     box-shadow: 2px 2px 10px var(--bg-transparent);
     border-radius: 8px;
@@ -478,6 +490,7 @@ footer{
 
 @media (width <= 920px){
     header .list{
+        border-radius: initial;
         padding-bottom: 100px;
         position: fixed;
         top: 80px;
