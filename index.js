@@ -63,17 +63,18 @@ const projectsContent = document.querySelector('.projects-content')
 PROJECTS.forEach(project => {
     const card = document.createElement('div')
     card.classList.add('card');
-    const figure = document.createElement('figure')
-    figure.classList.add('card-img')
+    // const figure = document.createElement('figure')
+    // figure.classList.add('card-img')
     const img = document.createElement('img')
 
     img.src = project.img_project
     img.alt = `imagen de ${project.img_project.split('/')[3]}`
-    figure.appendChild(img)
-    card.appendChild(figure)
+    // figure.appendChild(img)
+    // card.appendChild(figure)
+    card.appendChild(img)
 
-    const cardBody = document.createElement('div')
-    cardBody.classList.add('card-body')
+    // const cardBody = document.createElement('div')
+    // cardBody.classList.add('card-body')
     const tools = document.createElement('div')
     tools.classList.add('tools')
 
@@ -86,14 +87,15 @@ PROJECTS.forEach(project => {
         TOOL.appendChild(img)
         tools.appendChild(TOOL)
     })
-    cardBody.appendChild(tools)
+    // cardBody.appendChild(tools)
+    card.appendChild(tools)
     const link = document.createElement('a')
-    link.textContent = 'Demo'
     link.href = project.url
     link.target = '_blank'
-    link.classList.add('demo', 'btn')
-    cardBody.appendChild(link)
-    card.appendChild(cardBody)
+    link.classList.add('demo')
+    // cardBody.appendChild(link)
+    // card.appendChild(cardBody)
+    card.appendChild(link)
     projectsContent.appendChild(card)
 })
 
