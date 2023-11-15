@@ -286,6 +286,7 @@ main{
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 32px;
     place-items: center;
+    
 }
 
 .card{
@@ -382,6 +383,12 @@ main{
 footer{
     margin-top: 50px;
 }
+
+.f-form{
+    max-width: 800px;
+    margin: 0 auto;
+}
+
 .fields{
     border: none;
     color: var(--color-800);
@@ -495,6 +502,15 @@ footer{
 
 .toast.show{
    top: 200px
+}
+
+.footer-message{
+    margin: 20px 0;
+    font-weight: bolder;
+}
+
+.footer-message p{
+    color: var(--text-color);
 }
 
 
