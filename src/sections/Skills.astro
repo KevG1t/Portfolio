@@ -1,0 +1,65 @@
+---
+import SectionTitle from '../components/SectionTitle.astro'
+import { skills } from '@/const/skillsList.ts'
+import Icon from '../components/Icon.astro'
+---
+<section class="section bg-bg-primary p-6" id="skills">
+  <div class="max-w-[1024px] mx-auto">
+    <SectionTitle class="text-2xl text-secondary font-bold">
+      Skills
+    </SectionTitle>
+    <div class="grid grid-cols-1 gap-8 md:grid-cols-2 md:grid-rows-2 mt-10 lg:px-20">
+      <div class="flex flex-col gap-4 row-span-2">
+        <h3 class="uppercase text-base font-bold text-primary">Frontend</h3>
+        <div class="grid flex-1 rounded-sm items-center grid-cols-3 py-6 gap-6 border border-black/50 hover:scale-105 transition-all hover:shadow-lg hover:shadow-black/50">
+          {
+            skills.map(({name, stack}) => {
+                return stack === 'fr' ? (
+                  <div class="flex flex-col gap-2 items-center">
+                    <div class="w-10 h-10">
+                      <Icon icon={name}/>
+                    </div>
+                    <span class="text-sm text-primary text-center">{name}</span>
+                  </div>
+                ) : null
+              })
+          }
+          </div>
+      </div>
+      <div class="flex flex-col gap-4">
+        <h3 class="uppercase text-base font-bold text-primary">Backend</h3>
+        <div class="grid grid-cols-2 flex-1 items-center lg:grid-cols-5 py-6 gap-4 border border-black/50 hover:scale-105 rounded-sm transition-all hover:shadow-lg hover:shadow-black/50 ">
+          {
+            skills.map(({name, stack}) => {
+                return stack === 'bk' ? (
+                  <div class="flex flex-col gap-2 items-center">
+                    <div class="w-10 h-10">
+                      <Icon icon={name}/>
+                    </div>
+                    <span class="text-sm text-primary text-center">{name}</span>
+                  </div>
+                ) : null
+              })
+          }
+          </div>
+      </div>
+      <div class="flex flex-col gap-4">
+        <h3 class="uppercase text-base font-bold text-primary">Tools</h3>
+        <div class="grid grid-cols-2 flex-1 items-center py-6 gap-4 border border-black/50 hover:scale-105 transition-all rounded-sm hover:shadow-lg hover:shadow-black/50">
+          {
+            skills.map(({name, stack}) => {
+                return stack === 't' ? (
+                  <div class="flex flex-col gap-2 items-center">
+                    <div class="w-10 h-10">
+                      <Icon icon={name}/>
+                    </div>
+                    <span class="text-sm text-primary text-center">{name}</span>
+                  </div>
+                ) : null
+              })
+          }
+          </div>
+      </div>
+    </div>
+  </div>
+</section>

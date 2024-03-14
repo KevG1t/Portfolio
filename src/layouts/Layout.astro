@@ -1,0 +1,91 @@
+---
+import '@fontsource-variable/onest';
+
+interface Props {
+	title: string;
+	description?: string;
+}
+
+const { title, description } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content={description} />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head> 
+	<body id="home">
+		<slot />
+	</body>
+</html>
+<style is:global>
+	:root {
+		/* textos y parrafos */
+		--color-primary: #aaadbf;
+		/* complementos a texto, titulos grandes, bg de botonoes y select de enlaces relleno*/
+		--color-secondary: #ffcc73;
+		/* bg de fondos */
+		--bg-color-primary: #191d29;
+		--bg-color-secondary: #161821;
+		/* titulos pequeños e iconos */
+		--accent: #707894;
+		--color-neutral: #eee;
+	}
+
+
+html {
+	scroll-behavior: smooth;
+  overflow-x: hidden;
+  overscroll-behavior: none;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: theme("colors.secondary");
+  border: 2px solid transparent;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-color-secondary);
+}
+
+::-webkit-scrollbar-corner {
+  background: var(--bg-color-secondary);
+}
+
+	body{
+		margin: 0 auto;
+		min-height: 100dvh;
+		width: 100%;
+		background: var(--bg-color-primary);
+	}
+
+	code {
+		font-family:
+			Menlo,
+			Monaco,
+			Lucida Console,
+			Liberation Mono,
+			DejaVu Sans Mono,
+			Bitstream Vera Sans Mono,
+			Courier New,
+			monospace;
+	}
+
+	@media (prefers-reduced-motion: reduce) {
+        html {
+          scroll-behavior: auto;
+        }
+      }
+</style>

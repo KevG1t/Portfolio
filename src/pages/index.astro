@@ -1,0 +1,30 @@
+---
+import Layout from '@/layouts/Layout.astro'
+import Home from '@/sections/Home.astro'
+import About from '@/sections/About.astro'
+import Skills from '@/sections/Skills.astro'
+import Projects from '@/sections/Projects.astro'
+import Header from '@/components/Header.astro'
+import Footer from '@/sections/Footer.astro'
+---
+
+<Layout title="Welcome to Astro.">
+	<Header />
+	<main>
+		<Home />
+		<About />
+		<Skills />
+		<Projects />
+	</main>
+	<Footer />
+</Layout>
+
+<style>
+
+	.link-card-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+		gap: 2rem;
+		padding: 0;
+	}
+</style>

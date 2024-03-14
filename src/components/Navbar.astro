@@ -1,0 +1,56 @@
+---
+import { navList } from '@/const/navigation.ts'
+---
+<nav class="lg:w-[400px]">
+  <ul class="list hidden flex flex-col max-w-[200px] bg-bg-secondary h-60 px-6 py-2 gap-4 justify-around absolute right-6 top-20 rounded-md border-2 border-slate-700/50 lg:flex-row lg:flex lg:max-w-full lg:h-full lg:static lg:rounded-none lg:border-none lg:bg-transparent">
+      {
+        navList.map(item => (
+          <li>
+            <a aria-label={item.label} class="realtive text-sm transition text-primary uppercase hover:text-secondary hover:underline hover:underline-offset-8" href={item.path}>{item.name}</a>
+          </li>
+        ))
+      }
+  </ul>
+</nav>
+
+<!-- <script>
+  document.addEventListener("astro:page-load", () => {
+    const sections = document.querySelectorAll("section")
+    const navItems = document.querySelectorAll("header nav > ul > li a")
+
+    const callback = (entries: any[]) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          navItems.forEach((item) => {
+            if (item.getAttribute("aria-label") == entry.target.id) {
+              item.classList.add("text-seconday")
+            } else {
+              item.classList.remove("text-seconday")
+            }
+          })
+        }
+      })
+    }
+
+    const observer = new IntersectionObserver(callback, {
+      root: null,
+      rootMargin: "0px",
+      threshold: 0.3,
+    })
+
+    sections.forEach((section) => {
+      observer.observe(section)
+    })
+
+    // Cleanup function
+    document.onvisibilitychange = () => {
+      if (document.visibilityState === "hidden") {
+        observer.disconnect()
+      } else {
+        sections.forEach((section) => {
+          observer.observe(section)
+        })
+      }
+    }
+  })
+</script> -->

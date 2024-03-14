@@ -1,0 +1,79 @@
+---
+import SectionTitle from '../components/SectionTitle.astro'
+import CardBase from '@/components/CardBase.astro'
+import ArrowRight from 'public/icons/ArrowRight.astro'
+import Book from 'public/icons/Book.astro'
+import Laptop from 'public/icons/Laptop.astro'
+import Stack from 'public/icons/Stack.astro'
+import School from 'public/icons/School.astro'
+import Briefcase from 'public/icons/Briefcase.astro'
+import Backpack from 'public/icons/Backpack.astro'
+import Certificate from 'public/icons/Certificate.astro'
+---
+<section class="section bg-bg-secondary p-6" id="about">
+  <div class="max-w-[1024px] mx-auto">
+    <SectionTitle class="text-2xl text-secondary font-bold">
+      About me
+    </SectionTitle>
+    <div class="flex flex-col gap-6 mt-6 items-center text-center justify-center px-8">
+      <p class="text-primary text-sm text-balance">"Hello! I'm a passionate front-end web developer 💻 with an insatiable thirst for knowledge and a deep passion for creating exceptional digital experiences. My journey in the world of web development began as a self-taught enthusiast, which has made me a strong believer in the power of self-discipline and self-education📚.</p>
+      <p class="text-primary text-sm text-balance">I have invested countless hours learning the latest technologies and development techniques, always seeking to push my limits and expand my skill set."</p>
+    </div>
+    <div class="my-6">
+      <h3 class="text-center text-2xl text-secondary font-bold my-10">Resume</h3>
+    </div>
+    <di class="grid grid-cols-1 gap-6 md:grid-cols-2">
+      <div class="flex flex-col gap-6 items-center">
+        <div class="flex gap-4 items-center text-secondary">
+          <Backpack class="w-10 h-10"/>
+          <h3 class="text-center text-2xl text-text-neutral font-bold">Education:</h3>
+        </div>
+        <CardBase >
+          <School class="w-10 h-10"/>
+          <span class="uppercase text-base font-bold text-primary group-hover:text-secondary">university</span>
+          <p class="text-sm text-primary text-balance text-center">
+            <span class="text-secondary">+5</span> years studying computer engineering, at the national engineering university (UNI RUSB) Managua Nicaragua. learning about programming, databases and everything about software development.
+          </p>
+        </CardBase>
+        <CardBase >
+          <Certificate class="w-10 h-10"/>
+          <span class="uppercase text-base font-bold text-primary group-hover:text-secondary">cs50</span>
+          <p class="text-sm text-primary text-balance text-center">
+            In parallel with the university, it offers an exclusive course at Harvard University where I learned everything about programming logic and web development.
+          </p>
+        </CardBase>
+        <CardBase >
+          <Certificate class="w-10 h-10"/>
+          <span class="uppercase text-base font-bold text-primary group-hover:text-secondary">Arcitura education inc</span>
+          <p class="text-sm text-primary text-balance text-center">I took a non-practical course on Big data where I learned all the basic and advanced concepts about Big data, certifying me as a Big data consultant and Big data professional.</p>
+        </CardBase>
+      </div>
+      <div class="flex flex-col gap-6 items-center">
+        <div class="flex gap-4 items-center text-secondary">
+          <Briefcase class="w-10 h-10"/>
+          <h3 class="text-center text-2xl text-text-neutral font-bold">Experience:</h3>
+        </div>
+        <CardBase >
+          <Book class="w-10 h-10"/>
+          <span class="uppercase text-base font-bold text-primary group-hover:text-secondary">self-taught</span>
+          <p class="text-sm text-primary text-balance text-center">
+            <span class="text-secondary">+5</span> Years being self-taught, developing web pages and polishing my knowledge, also learning what was taught at the university from which I graduated as a computer engineer.
+          </p>
+        </CardBase>
+        <CardBase >
+          <Laptop class="w-10 h-10"/>
+          <span class="uppercase text-base font-bold text-primary group-hover:text-secondary">internship</span>
+          <p class="text-sm text-primary text-balance text-center">
+            <span class="text-secondary">+6</span> Months as a remote intern at the consulting company <a href="https://www.linkedin.com/company/coderland-by-dominion/" target="_blank"
+            rel="noreferrer" class="text-secondary underline underline-offset-2">Coderland By Dominion</a> in Panama where I learned collaborative work and participated in several projects as a frontend developer.
+          </p>
+        </CardBase>
+        <CardBase >
+          <Stack class="w-10 h-10"/>
+          <span class="uppercase text-base font-bold text-primary group-hover:text-secondary">full stack</span>
+          <p class="text-sm text-primary text-balance text-center">Currently I am individually developing software for the company <span class="text-secondary">"Aurora Santa Fe S.A"</span> located in Costa Rica which consists of an IPTV service. This project will be used as a thesis project.</p>
+        </CardBase>
+      </div>
+    </div>
+  </div>
+</section>
