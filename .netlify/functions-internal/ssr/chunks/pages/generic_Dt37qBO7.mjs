@@ -1050,4 +1050,9 @@ const GET = async ({ request }) => {
   }
 };
 
-export { GET };
+const generic = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
+  __proto__: null,
+  GET
+}, Symbol.toStringTag, { value: 'Module' }));
+
+export { $$Image as $, generic as g };

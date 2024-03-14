@@ -2,6 +2,7 @@
 import { e as createAstro, f as createComponent, r as renderTemplate, h as addAttribute, i as renderHead, j as renderSlot, m as maybeRenderHead, k as renderComponent, s as spreadAttributes, l as Fragment, u as unescapeHTML } from '../astro_CkhaQydD.mjs';
 import 'kleur/colors';
 import 'clsx';
+import { $ as $$Image } from './generic_Dt37qBO7.mjs';
 
 const $$Astro$m = createAstro();
 const $$Layout = createComponent(async ($$result, $$props, $$slots) => {
@@ -224,14 +225,66 @@ Skills
   })} </div> </div> </div> </div> </section>`;
 }, "C:/Users/kevin/dev/porfolio/src/sections/Skills.astro", void 0);
 
+const image1 = new Proxy({"src":"/_astro/ecommerce.B9jT-ORZ.webp","width":1200,"height":900,"format":"webp"}, {
+						get(target, name, receiver) {
+							if (name === 'clone') {
+								return structuredClone(target);
+							}
+							if (name === 'fsPath') {
+								return "C:/Users/kevin/dev/porfolio/src/assets/img/ecommerce.webp";
+							}
+							
+							return target[name];
+						}
+					});
+
+const image2 = new Proxy({"src":"/_astro/movies.BKtCdgiz.webp","width":1200,"height":900,"format":"webp"}, {
+						get(target, name, receiver) {
+							if (name === 'clone') {
+								return structuredClone(target);
+							}
+							if (name === 'fsPath') {
+								return "C:/Users/kevin/dev/porfolio/src/assets/img/movies.webp";
+							}
+							
+							return target[name];
+						}
+					});
+
+const image3 = new Proxy({"src":"/_astro/quizz.C6xyQ5Oh.webp","width":1200,"height":900,"format":"webp"}, {
+						get(target, name, receiver) {
+							if (name === 'clone') {
+								return structuredClone(target);
+							}
+							if (name === 'fsPath') {
+								return "C:/Users/kevin/dev/porfolio/src/assets/img/quizz.webp";
+							}
+							
+							return target[name];
+						}
+					});
+
+const image4 = new Proxy({"src":"/_astro/tt.CDpQSWr7.webp","width":1200,"height":900,"format":"webp"}, {
+						get(target, name, receiver) {
+							if (name === 'clone') {
+								return structuredClone(target);
+							}
+							if (name === 'fsPath') {
+								return "C:/Users/kevin/dev/porfolio/src/assets/img/tt.webp";
+							}
+							
+							return target[name];
+						}
+					});
+
 const $$Astro$8 = createAstro();
 const $$Projects = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$8, $$props, $$slots);
   Astro2.self = $$Projects;
   return renderTemplate`${maybeRenderHead()}<section class="section bg-bg-secondary p-6" id="projects"> <div class="max-w-[1024px] mx-auto"> ${renderComponent($$result, "SectionTitle", $$SectionTitle, { "class": "text-2xl text-secondary font-bold" }, { "default": ($$result2) => renderTemplate`
 Projects
-` })} <div class="flex flex-col gap-6 mt-4"> <div class="grid grid-cols-1 md:grid-cols-2 gap-4 justify-center items-center border-b-4 border-bg-primary py-14 md:p-0"> <img class=" 0" style="ba" src="../assets/img/ecommerce.webp" alt="ecommerce de productos varios"> <div class="flex flex-col gap-4"> <h3 class="uppercase text-base font-bold text-primary text-center md:text-left">ECOMMERCE</h3> <div class="flex gap-4 justify-center md:justify-start"> <a class="transition-all uppercase inline-block text-bg-primary text-sm bg-secondary rounded-sm px-4 py-2 hover:outline hover:bg-amber-200 w-fit" href="https://github.com/KevG1t/e-commerce-react" target="_blank" rel="noreferrer">Code</a> <a class="transition-all uppercase inline-block text-bg-primary text-sm bg-secondary rounded-sm px-4 py-2 hover:outline hover:bg-amber-200 w-fit" href="https://e-commerce-react-chi-ruby.vercel.app/" target="_blank" rel="noreferrer">Demo</a> </div> <p class="text-sm text-primary text-balance text-center md:text-left">In this project I tested my knowledge in TypeScript and global state management.</p> </div> </div> <div class="grid grid-cols-1 md:grid-cols-2 gap-4 justify-center items-center border-b-4 border-bg-primary py-14 md:p-0"> <img class="md:order-2" src="../assets/img/movies.webp" alt="ecommerce de productos varios"> <div class="flex flex-col gap-4"> <h3 class="uppercase text-base text-center md:text-right font-bold text-primary">SEARCH MOVIES</h3> <div class="flex gap-4 justify-center md:justify-end"> <a class="transition-all uppercase inline-block text-bg-primary text-sm bg-secondary rounded-sm px-4 py-2 hover:outline hover:bg-amber-200 w-fit" href="https://github.com/KevG1t/Movies_Search" target="_blank" rel="noreferrer">Code</a> <a class="transition-all uppercase inline-block text-bg-primary text-sm bg-secondary rounded-sm px-4 py-2 hover:outline hover:bg-amber-200 w-fit" href="https://kevg1t.github.io/Movies_Search/" target="_blank" rel="noreferrer">Demo</a> </div> <p class="text-sm text-primary text-balance text-center md:text-right">With this project I tested my knowledge of hooks and learned how to create a debounce for search engines.</p> </div> </div> <div class="grid grid-cols-1 md:grid-cols-2 gap-4 justify-center items-center border-b-4 border-bg-primary py-14 md:p-0"> <img class="" src="../assets/img/quizz.webp" alt="ecommerce de productos varios"> <div class="flex flex-col gap-4"> <h3 class="uppercase text-base text-center md:text-left font-bold text-primary">Quizz</h3> <div class="flex gap-4 justify-center md:justify-start"> <a class="transition-all uppercase inline-block text-bg-primary text-sm bg-secondary rounded-sm px-4 py-2 hover:outline hover:bg-amber-200 w-fit" href="https://github.com/KevG1t/JavaScriptQuizz" target="_blank" rel="noreferrer">Code</a> <a class="transition-all uppercase inline-block text-bg-primary text-sm bg-secondary rounded-sm px-4 py-2 hover:outline hover:bg-amber-200 w-fit" href="https://kevg1t.github.io/JavaScriptQuizz/" target="_blank" rel="noreferrer">Demo</a> </div> <p class="text-sm text-primary text-balance text-center md:text-left">A simple project where I tested the Zustand global state manager.
-</p> </div> </div> <div class="grid grid-cols-1 md:grid-cols-2 gap-4 justify-center items-center py-14 md:p-0"> <img class="md:order-2" src="../assets/img/tt.webp" alt="ecommerce de productos varios"> <div class="flex flex-col gap-4"> <h3 class="uppercase text-base text-center md:text-right font-bold text-primary">TIC TAC TOE ONLINE</h3> <div class="flex gap-4 justify-center md:justify-end"> <a class="transition-all uppercase inline-block text-bg-primary text-sm bg-secondary rounded-sm px-4 py-2 hover:outline hover:bg-amber-200 w-fit" href="https://github.com/KevG1t/tic-tac-toe-online" target="_blank" rel="noreferrer">Code</a> <a class="transition-all uppercase inline-block text-bg-primary text-sm bg-secondary rounded-sm px-4 py-2 hover:outline hover:bg-amber-200 w-fit" href="https://tic-tac-toe-online-nine.vercel.app/" target="_blank" rel="noreferrer">Demo</a> </div> <p class="text-sm text-primary text-balance text-center md:text-right">In this project I put all my knowledge about React and Node JS to the test on the backend side where I created an API with socket io.</p> </div> </div> </div> </div> </section>`;
+` })} <div class="flex flex-col gap-6 mt-4"> <div class="grid grid-cols-1 md:grid-cols-2 gap-4 justify-center items-center border-b-4 border-bg-primary py-14 md:p-0"> ${renderComponent($$result, "Image", $$Image, { "src": image1, "alt": "ecommerce de productos varios" })} <div class="flex flex-col gap-4"> <h3 class="uppercase text-base font-bold text-primary text-center md:text-left">ECOMMERCE</h3> <div class="flex gap-4 justify-center md:justify-start"> <a class="transition-all uppercase inline-block text-bg-primary text-sm bg-secondary rounded-sm px-4 py-2 hover:outline hover:bg-amber-200 w-fit" href="https://github.com/KevG1t/e-commerce-react" target="_blank" rel="noreferrer">Code</a> <a class="transition-all uppercase inline-block text-bg-primary text-sm bg-secondary rounded-sm px-4 py-2 hover:outline hover:bg-amber-200 w-fit" href="https://e-commerce-react-chi-ruby.vercel.app/" target="_blank" rel="noreferrer">Demo</a> </div> <p class="text-sm text-primary text-balance text-center md:text-left">In this project I tested my knowledge in TypeScript and global state management.</p> </div> </div> <div class="grid grid-cols-1 md:grid-cols-2 gap-4 justify-center items-center border-b-4 border-bg-primary py-14 md:p-0"> ${renderComponent($$result, "Image", $$Image, { "class": "md:order-2", "src": image2, "alt": "buscador de peliculas" })} <div class="flex flex-col gap-4"> <h3 class="uppercase text-base text-center md:text-right font-bold text-primary">SEARCH MOVIES</h3> <div class="flex gap-4 justify-center md:justify-end"> <a class="transition-all uppercase inline-block text-bg-primary text-sm bg-secondary rounded-sm px-4 py-2 hover:outline hover:bg-amber-200 w-fit" href="https://github.com/KevG1t/Movies_Search" target="_blank" rel="noreferrer">Code</a> <a class="transition-all uppercase inline-block text-bg-primary text-sm bg-secondary rounded-sm px-4 py-2 hover:outline hover:bg-amber-200 w-fit" href="https://kevg1t.github.io/Movies_Search/" target="_blank" rel="noreferrer">Demo</a> </div> <p class="text-sm text-primary text-balance text-center md:text-right">With this project I tested my knowledge of hooks and learned how to create a debounce for search engines.</p> </div> </div> <div class="grid grid-cols-1 md:grid-cols-2 gap-4 justify-center items-center border-b-4 border-bg-primary py-14 md:p-0"> ${renderComponent($$result, "Image", $$Image, { "class": "", "src": image3, "alt": "Quizz de javascript" })} <div class="flex flex-col gap-4"> <h3 class="uppercase text-base text-center md:text-left font-bold text-primary">Quizz</h3> <div class="flex gap-4 justify-center md:justify-start"> <a class="transition-all uppercase inline-block text-bg-primary text-sm bg-secondary rounded-sm px-4 py-2 hover:outline hover:bg-amber-200 w-fit" href="https://github.com/KevG1t/JavaScriptQuizz" target="_blank" rel="noreferrer">Code</a> <a class="transition-all uppercase inline-block text-bg-primary text-sm bg-secondary rounded-sm px-4 py-2 hover:outline hover:bg-amber-200 w-fit" href="https://kevg1t.github.io/JavaScriptQuizz/" target="_blank" rel="noreferrer">Demo</a> </div> <p class="text-sm text-primary text-balance text-center md:text-left">A simple project where I tested the Zustand global state manager.
+</p> </div> </div> <div class="grid grid-cols-1 md:grid-cols-2 gap-4 justify-center items-center py-14 md:p-0"> ${renderComponent($$result, "Image", $$Image, { "class": "md:order-2", "src": image4, "alt": "tic tac toe online" })} <div class="flex flex-col gap-4"> <h3 class="uppercase text-base text-center md:text-right font-bold text-primary">TIC TAC TOE ONLINE</h3> <div class="flex gap-4 justify-center md:justify-end"> <a class="transition-all uppercase inline-block text-bg-primary text-sm bg-secondary rounded-sm px-4 py-2 hover:outline hover:bg-amber-200 w-fit" href="https://github.com/KevG1t/tic-tac-toe-online" target="_blank" rel="noreferrer">Code</a> <a class="transition-all uppercase inline-block text-bg-primary text-sm bg-secondary rounded-sm px-4 py-2 hover:outline hover:bg-amber-200 w-fit" href="https://tic-tac-toe-online-nine.vercel.app/" target="_blank" rel="noreferrer">Demo</a> </div> <p class="text-sm text-primary text-balance text-center md:text-right">In this project I put all my knowledge about React and Node JS to the test on the backend side where I created an API with socket io.</p> </div> </div> </div> </div> </section>`;
 }, "C:/Users/kevin/dev/porfolio/src/sections/Projects.astro", void 0);
 
 const navList = [
