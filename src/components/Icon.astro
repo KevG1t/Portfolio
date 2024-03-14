@@ -3,7 +3,7 @@ export interface Props{
   icon: string
 }
 const { icon, ...attributes } = Astro.props as Props
-const { default: innerHTML } = await import(`/public/skills-icons/${icon}.astro?raw`)
+const { default: innerHTML } = await import(`${icon}?raw`)
 ---
 
 <Fragment {...attributes} set:html={innerHTML}/>
