@@ -100,103 +100,113 @@ In parallel with the university, it offers an exclusive course at Harvard Univer
 const skills = [
   {
     name: "React",
-    path: "/public/skills-icons/React.astro",
+    path: "../../public/skills-icons/React.astro",
     stack: "fr"
   },
   {
     name: "Vue",
-    path: "/public/skills-icons/Vue.astro",
+    path: "../../public/skills-icons/Vue.astro",
     stack: "fr"
   },
   {
     name: "Next",
-    path: "/public/skills-icons/Next.astro",
+    path: "../../public/skills-icons/Next.astro",
     stack: "fr"
   },
   {
     name: "Astro",
-    path: "/public/skills-icons/Astro.astro",
+    path: "../../public/skills-icons/Astro.astro",
     stack: "fr"
   },
   {
     name: "HTML",
-    path: "/public/skills-icons/HTML.astro",
+    path: "../../public/skills-icons/HTML.astro",
     stack: "fr"
   },
   {
     name: "CSS",
-    path: "/public/skills-icons/CSS.astro",
+    path: "../../public/skills-icons/CSS.astro",
     stack: "fr"
   },
   {
     name: "JavaScript",
-    path: "/public/skills-icons/JavaScript.astro",
+    path: "../../public/skills-icons/JavaScript.astro",
     stack: "fr"
   },
   {
     name: "TypeScript",
-    path: "/public/skills-icons/TypeScript.astro",
+    path: "../../public/skills-icons/TypeScript.astro",
     stack: "fr"
   },
   {
     name: "Tailwind",
-    path: "/public/skills-icons/Tailwind.astro",
+    path: "../../public/skills-icons/Tailwind.astro",
     stack: "fr"
   },
   {
     name: "Docker",
-    path: "/public/skills-icons/Docker.astro",
+    path: "../../public/skills-icons/Docker.astro",
     stack: "t"
   },
   {
     name: "Git",
-    path: "/public/skills-icons/Git.astro",
+    path: "../../public/skills-icons/Git.astro",
     stack: "t"
   },
   {
     name: "GitHub",
-    path: "/public/skills-icons/GitHub.astro",
+    path: "../../public/skills-icons/GitHub.astro",
     stack: "t"
   },
   {
     name: "AzureDevops",
-    path: "/public/skills-icons/AzureDevops.astro",
+    path: "../../public/skills-icons/AzureDevops.astro",
     stack: "t"
   },
   {
     name: "Node",
-    path: "/public/skills-icons/Node.astro",
+    path: "../../public/skills-icons/Node.astro",
     stack: "bk"
   },
   {
     name: "Express",
-    path: "/public/skills-icons/Express.astro",
+    path: "../../public/skills-icons/Express.astro",
     stack: "bk"
   },
   {
     name: "MySQL",
-    path: "/public/skills-icons/MySQL.astro",
+    path: "../../public/skills-icons/MySQL.astro",
     stack: "bk"
   },
   {
     name: "SQLServer",
-    path: "/public/skills-icons/SQLServer.astro",
+    path: "../../public/skills-icons/SQLServer.astro",
     stack: "bk"
   },
   {
     name: "GraphQL",
-    path: "/public/skills-icons/GraphQL.astro",
+    path: "../../public/skills-icons/GraphQL.astro",
     stack: "bk"
   }
 ];
+
+const __variableDynamicImportRuntimeHelper = (glob, path) => {
+    const v = glob[path];
+    if (v) {
+        return typeof v === 'function' ? v() : Promise.resolve(v);
+    }
+    return new Promise((_, reject) => {
+        (typeof queueMicrotask === 'function' ? queueMicrotask : setTimeout)(reject.bind(null, new Error('Unknown variable dynamic import: ' + path)));
+    });
+};
 
 const $$Astro$a = createAstro();
 const $$Icon = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$a, $$props, $$slots);
   Astro2.self = $$Icon;
   const { icon, ...attributes } = Astro2.props;
-  const { default: innerHTML } = await import(`${icon}?raw`);
-  return renderTemplate`${renderComponent($$result, "Fragment", Fragment, { ...attributes }, { "default": ($$result2) => renderTemplate`${unescapeHTML(innerHTML)}` })}`;
+  const { default: component } = await __variableDynamicImportRuntimeHelper((/* #__PURE__ */ Object.assign({"../../public/skills-icons/Astro.astro": () => import('../Astro_SinE7zNU.mjs'),"../../public/skills-icons/AzureDevops.astro": () => import('../AzureDevops_BQ2T6HV0.mjs'),"../../public/skills-icons/CSS.astro": () => import('../CSS_DvpM4yMl.mjs'),"../../public/skills-icons/Docker.astro": () => import('../Docker_DyQS1RU_.mjs'),"../../public/skills-icons/Express.astro": () => import('../Express_BJMeglYS.mjs'),"../../public/skills-icons/Git.astro": () => import('../Git_-M1s5RNF.mjs'),"../../public/skills-icons/GitHub.astro": () => import('../GitHub_CIUepli4.mjs'),"../../public/skills-icons/GraphQL.astro": () => import('../GraphQL_C6EAQLI6.mjs'),"../../public/skills-icons/HTML.astro": () => import('../HTML_DqcH9paQ.mjs'),"../../public/skills-icons/JavaScript.astro": () => import('../JavaScript_CS23cp9L.mjs'),"../../public/skills-icons/MySQL.astro": () => import('../MySQL_BkQApB6r.mjs'),"../../public/skills-icons/Next.astro": () => import('../Next_-Yo7D8yB.mjs'),"../../public/skills-icons/Node.astro": () => import('../Node_ChewpINX.mjs'),"../../public/skills-icons/React.astro": () => import('../React_Crq8CNsX.mjs'),"../../public/skills-icons/SQLServer.astro": () => import('../SQLServer_ZGye2j4V.mjs'),"../../public/skills-icons/Tailwind.astro": () => import('../Tailwind_31mcobcH.mjs'),"../../public/skills-icons/TypeScript.astro": () => import('../TypeScript_DHEMncCj.mjs'),"../../public/skills-icons/Vue.astro": () => import('../Vue_B49wX0eC.mjs')})), `../../public/skills-icons/${icon}.astro`);
+  return renderTemplate`${renderComponent($$result, "Fragment", Fragment, { ...attributes }, { "default": ($$result2) => renderTemplate`${unescapeHTML(component)}` })}`;
 }, "C:/Users/kevin/dev/porfolio/src/components/Icon.astro", void 0);
 
 const $$Astro$9 = createAstro();
@@ -205,12 +215,12 @@ const $$Skills = createComponent(async ($$result, $$props, $$slots) => {
   Astro2.self = $$Skills;
   return renderTemplate`${maybeRenderHead()}<section class="section bg-bg-primary p-6" id="skills"> <div class="max-w-[1024px] mx-auto"> ${renderComponent($$result, "SectionTitle", $$SectionTitle, { "class": "text-2xl text-secondary font-bold" }, { "default": ($$result2) => renderTemplate`
 Skills
-` })} <div class="grid grid-cols-1 gap-8 md:grid-cols-2 md:grid-rows-2 mt-10 lg:px-20"> <div class="flex flex-col gap-4 row-span-2"> <h3 class="uppercase text-base font-bold text-primary">Frontend</h3> <div class="grid flex-1 rounded-sm items-center grid-cols-3 py-6 gap-6 border border-black/50 hover:scale-105 transition-all hover:shadow-lg hover:shadow-black/50"> ${skills.map(({ path, name, stack }) => {
-    return stack === "fr" ? renderTemplate`<div class="flex flex-col gap-2 items-center"> <div class="w-10 h-10"> ${renderComponent($$result, "Icon", $$Icon, { "icon": path })} </div> <span class="text-sm text-primary text-center">${name}</span> </div>` : null;
-  })} </div> </div> <div class="flex flex-col gap-4"> <h3 class="uppercase text-base font-bold text-primary">Backend</h3> <div class="grid grid-cols-2 flex-1 items-center lg:grid-cols-5 py-6 gap-4 border border-black/50 hover:scale-105 rounded-sm transition-all hover:shadow-lg hover:shadow-black/50 "> ${skills.map(({ path, name, stack }) => {
-    return stack === "bk" ? renderTemplate`<div class="flex flex-col gap-2 items-center"> <div class="w-10 h-10"> ${renderComponent($$result, "Icon", $$Icon, { "icon": path })} </div> <span class="text-sm text-primary text-center">${name}</span> </div>` : null;
-  })} </div> </div> <div class="flex flex-col gap-4"> <h3 class="uppercase text-base font-bold text-primary">Tools</h3> <div class="grid grid-cols-2 flex-1 items-center py-6 gap-4 border border-black/50 hover:scale-105 transition-all rounded-sm hover:shadow-lg hover:shadow-black/50"> ${skills.map(({ path, name, stack }) => {
-    return stack === "t" ? renderTemplate`<div class="flex flex-col gap-2 items-center"> <div class="w-10 h-10"> ${renderComponent($$result, "Icon", $$Icon, { "icon": path })} </div> <span class="text-sm text-primary text-center">${name}</span> </div>` : null;
+` })} <div class="grid grid-cols-1 gap-8 md:grid-cols-2 md:grid-rows-2 mt-10 lg:px-20"> <div class="flex flex-col gap-4 row-span-2"> <h3 class="uppercase text-base font-bold text-primary">Frontend</h3> <div class="grid flex-1 rounded-sm items-center grid-cols-3 py-6 gap-6 border border-black/50 hover:scale-105 transition-all hover:shadow-lg hover:shadow-black/50"> ${skills.map(({ name, stack }) => {
+    return stack === "fr" ? renderTemplate`<div class="flex flex-col gap-2 items-center"> <div class="w-10 h-10"> ${renderComponent($$result, "Icon", $$Icon, { "icon": name })} </div> <span class="text-sm text-primary text-center">${name}</span> </div>` : null;
+  })} </div> </div> <div class="flex flex-col gap-4"> <h3 class="uppercase text-base font-bold text-primary">Backend</h3> <div class="grid grid-cols-2 flex-1 items-center lg:grid-cols-5 py-6 gap-4 border border-black/50 hover:scale-105 rounded-sm transition-all hover:shadow-lg hover:shadow-black/50 "> ${skills.map(({ name, stack }) => {
+    return stack === "bk" ? renderTemplate`<div class="flex flex-col gap-2 items-center"> <div class="w-10 h-10"> ${renderComponent($$result, "Icon", $$Icon, { "icon": name })} </div> <span class="text-sm text-primary text-center">${name}</span> </div>` : null;
+  })} </div> </div> <div class="flex flex-col gap-4"> <h3 class="uppercase text-base font-bold text-primary">Tools</h3> <div class="grid grid-cols-2 flex-1 items-center py-6 gap-4 border border-black/50 hover:scale-105 transition-all rounded-sm hover:shadow-lg hover:shadow-black/50"> ${skills.map(({ name, stack }) => {
+    return stack === "t" ? renderTemplate`<div class="flex flex-col gap-2 items-center"> <div class="w-10 h-10"> ${renderComponent($$result, "Icon", $$Icon, { "icon": name })} </div> <span class="text-sm text-primary text-center">${name}</span> </div>` : null;
   })} </div> </div> </div> </div> </section>`;
 }, "C:/Users/kevin/dev/porfolio/src/sections/Skills.astro", void 0);
 
