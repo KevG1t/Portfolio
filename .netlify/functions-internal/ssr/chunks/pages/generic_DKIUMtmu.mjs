@@ -952,7 +952,7 @@ const $$Image = createComponent(async ($$result, $$props, $$slots) => {
     additionalAttributes.srcset = image.srcSet.attribute;
   }
   return renderTemplate`${maybeRenderHead()}<img${addAttribute(image.src, "src")}${spreadAttributes(additionalAttributes)}${spreadAttributes(image.attributes)}>`;
-}, "C:/Users/kevin/dev/porfolio/node_modules/astro/components/Image.astro", void 0);
+}, "C:/Users/kevin/dev/astro/Portfolio/node_modules/astro/components/Image.astro", void 0);
 
 const $$Astro = createAstro();
 const $$Picture = createComponent(async ($$result, $$props, $$slots) => {
@@ -992,10 +992,10 @@ const $$Picture = createComponent(async ($$result, $$props, $$slots) => {
     const srcsetAttribute = props.densities || !props.densities && !props.widths ? `${image.src}${image.srcSet.values.length > 0 ? ", " + image.srcSet.attribute : ""}` : image.srcSet.attribute;
     return renderTemplate`<source${addAttribute(srcsetAttribute, "srcset")}${addAttribute("image/" + image.options.format, "type")}${spreadAttributes(sourceAdditionalAttributes)}>`;
   })} <img${addAttribute(fallbackImage.src, "src")}${spreadAttributes(imgAdditionalAttributes)}${spreadAttributes(fallbackImage.attributes)}> </picture>`;
-}, "C:/Users/kevin/dev/porfolio/node_modules/astro/components/Picture.astro", void 0);
+}, "C:/Users/kevin/dev/astro/Portfolio/node_modules/astro/components/Picture.astro", void 0);
 
 const imageConfig = {"service":{"entrypoint":"astro/assets/services/sharp","config":{}},"domains":[],"remotePatterns":[]};
-					const outDir = new URL("file:///C:/Users/kevin/dev/porfolio/dist/");
+					const outDir = new URL("file:///C:/Users/kevin/dev/astro/Portfolio/dist/");
 					new URL("_astro", outDir);
 					const getImage = async (options) => await getImage$1(options, imageConfig);
 

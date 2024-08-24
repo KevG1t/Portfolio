@@ -1,6 +1,9 @@
 # build output
 dist/
 
+# Ignore Netlify-specific files
+.netlify/
+
 # generated types
 .astro/
 
